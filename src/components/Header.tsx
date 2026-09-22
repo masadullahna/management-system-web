@@ -12,7 +12,7 @@ const Header: FC<Readonly<HeaderProps>> = ({ title = 'Management System' }) => {
 				<span className="text-lg font-semibold text-slate-800">{title}</span>
 			</div>
 			<div className="flex items-center gap-4">
-				<UserButton afterSignOutUrl="/sign-in" />
+				<UserButton />
 			</div>
 		</header>
 	)

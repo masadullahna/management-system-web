@@ -23,7 +23,9 @@ const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }) => {
 			suppressHydrationWarning
 		>
 			<body className="min-h-full flex flex-col">
-				<ClerkProvider>{children}</ClerkProvider>
+				<ClerkProvider afterSignOutUrl="sign-in">
+					{children}
+				</ClerkProvider>
 			</body>
 		</html>
 	);
